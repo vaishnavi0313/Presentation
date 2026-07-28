@@ -1,0 +1,65 @@
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Arial, sans-serif">
+  <rect width="760" height="360" rx="12" fill="#ffffff" stroke="#d9d9d9" stroke-width="1.5"/>
+  <text x="380" y="36" text-anchor="middle" fill="#980000" font-size="16" font-weight="800" letter-spacing="1">AUDITOR EVIDENCE PACKAGE ARCHITECTURE</text>
+
+  <!-- 4 Input Artifacts -->
+  <g transform="translate(40, 75)">
+    <rect width="150" height="55" rx="6" fill="#f5f5f5" stroke="#980000" stroke-width="1.5"/>
+    <text x="75" y="25" text-anchor="middle" fill="#980000" font-size="12" font-weight="700">Consent State Record</text>
+    <text x="75" y="42" text-anchor="middle" fill="#595959" font-size="10">Timestamped Opt-in/out</text>
+  </g>
+
+  <g transform="translate(40, 140)">
+    <rect width="150" height="55" rx="6" fill="#f5f5f5" stroke="#980000" stroke-width="1.5"/>
+    <text x="75" y="25" text-anchor="middle" fill="#980000" font-size="12" font-weight="700">Cryptographic Logs</text>
+    <text x="75" y="42" text-anchor="middle" fill="#595959" font-size="10">SHA-256 Provenance</text>
+  </g>
+
+  <g transform="translate(40, 205)">
+    <rect width="150" height="55" rx="6" fill="#f5f5f5" stroke="#980000" stroke-width="1.5"/>
+    <text x="75" y="25" text-anchor="middle" fill="#980000" font-size="12" font-weight="700">ROPA Record Link</text>
+    <text x="75" y="42" text-anchor="middle" fill="#595959" font-size="10">Purpose &amp; Data Map</text>
+  </g>
+
+  <g transform="translate(40, 270)">
+    <rect width="150" height="55" rx="6" fill="#f5f5f5" stroke="#980000" stroke-width="1.5"/>
+    <text x="75" y="25" text-anchor="middle" fill="#980000" font-size="12" font-weight="700">DPIA Risk Matrix</text>
+    <text x="75" y="42" text-anchor="middle" fill="#595959" font-size="10">Mitigations &amp; Sign-off</text>
+  </g>
+
+  <!-- Connectors to Central Engine -->
+  <path d="M 190 102 L 270 180" stroke="#980000" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <path d="M 190 167 L 270 180" stroke="#980000" stroke-width="1.5"/>
+  <path d="M 190 232 L 270 180" stroke="#980000" stroke-width="1.5"/>
+  <path d="M 190 297 L 270 180" stroke="#980000" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Central Evidence Engine -->
+  <g transform="translate(270, 115)">
+    <rect width="200" height="130" rx="10" fill="#980000"/>
+    <text x="100" y="35" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="800">EVIDENCE ENGINE</text>
+    <text x="100" y="60" text-anchor="middle" fill="#ffcccc" font-size="11">DeepTrustxAI Verifier</text>
+    <line x1="20" y1="75" x2="180" y2="75" stroke="#ffffff" stroke-opacity="0.3"/>
+    <text x="100" y="95" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="600">Automated Assembly</text>
+    <text x="100" y="112" text-anchor="middle" fill="#ffffff" font-size="10" opacity="0.8">Digital Signature Check</text>
+  </g>
+
+  <!-- Arrow Engine -> Output -->
+  <path d="M 470 180 L 535 180" stroke="#980000" stroke-width="2.5" marker-end="url(#arrowEv)"/>
+
+  <!-- Output Bundle -->
+  <g transform="translate(540, 100)">
+    <rect width="180" height="160" rx="8" fill="#1a1a1a"/>
+    <rect x="15" y="15" width="150" height="130" rx="4" fill="none" stroke="#ea580c" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text x="90" y="45" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="800">EVIDENCE PACKAGE</text>
+    <text x="90" y="65" text-anchor="middle" fill="#ea580c" font-size="10" font-weight="700">dpdp-evidence-v4.zip</text>
+    <text x="90" y="95" text-anchor="middle" fill="#CCCCCC" font-size="10">• Signed Audit Manifest</text>
+    <text x="90" y="112" text-anchor="middle" fill="#CCCCCC" font-size="10">• Residual Data Provenance</text>
+    <text x="90" y="129" text-anchor="middle" fill="#CCCCCC" font-size="10">• Downstream Purge Logs</text>
+  </g>
+
+  <defs>
+    <marker id="arrowEv" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#980000"/>
+    </marker>
+  </defs>
+</svg>

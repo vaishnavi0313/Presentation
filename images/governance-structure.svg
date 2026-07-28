@@ -1,0 +1,51 @@
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Arial, sans-serif">
+  <rect width="760" height="360" rx="12" fill="#fafafa" stroke="#d9d9d9" stroke-width="1.5"/>
+  <text x="380" y="34" text-anchor="middle" fill="#980000" font-size="16" font-weight="800" letter-spacing="1">PRIVACY GOVERNANCE & DECISION RIGHTS ARCHITECTURE</text>
+
+  <!-- Top Level: Board & DPO -->
+  <g transform="translate(230, 60)">
+    <rect width="300" height="60" rx="8" fill="#980000"/>
+    <text x="150" y="28" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="800">Executive Board &amp; DPO</text>
+    <text x="150" y="46" text-anchor="middle" fill="#ffcccc" font-size="11">Strategic Oversight &amp; Statutory Accountability</text>
+  </g>
+
+  <path d="M 380 120 L 380 155" stroke="#980000" stroke-width="2"/>
+
+  <!-- Mid Level: Privacy Steering Committee -->
+  <g transform="translate(180, 155)">
+    <rect width="400" height="55" rx="8" fill="#1a1a1a"/>
+    <text x="200" y="26" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">Privacy Steering Committee</text>
+    <text x="200" y="43" text-anchor="middle" fill="#CCCCCC" font-size="10">Cross-Functional Decision Rights &amp; Policy Alignment</text>
+  </g>
+
+  <!-- 3 Branches -->
+  <path d="M 380 210 L 380 240" stroke="#980000" stroke-width="2"/>
+  <path d="M 140 240 L 620 240" stroke="#980000" stroke-width="2"/>
+  <path d="M 140 240 L 140 260" stroke="#980000" stroke-width="2"/>
+  <path d="M 380 240 L 380 260" stroke="#980000" stroke-width="2"/>
+  <path d="M 620 240 L 620 260" stroke="#980000" stroke-width="2"/>
+
+  <!-- Branch 1: Engineering & DevSecOps -->
+  <g transform="translate(40, 260)">
+    <rect width="200" height="75" rx="6" fill="#ffffff" stroke="#980000" stroke-width="1.5"/>
+    <text x="100" y="25" text-anchor="middle" fill="#980000" font-size="12" font-weight="700">Engineering &amp; DevSecOps</text>
+    <text x="100" y="43" text-anchor="middle" fill="#595959" font-size="10">Consent Middleware &amp; PETs</text>
+    <text x="100" y="60" text-anchor="middle" fill="#16a34a" font-size="10" font-weight="600">SLA: 24h Critical Purge</text>
+  </g>
+
+  <!-- Branch 2: Data Governance & Business -->
+  <g transform="translate(280, 260)">
+    <rect width="200" height="75" rx="6" fill="#ffffff" stroke="#980000" stroke-width="1.5"/>
+    <text x="100" y="25" text-anchor="middle" fill="#980000" font-size="12" font-weight="700">Data Owners &amp; Business</text>
+    <text x="100" y="43" text-anchor="middle" fill="#595959" font-size="10">PII Classification &amp; ROPA</text>
+    <text x="100" y="60" text-anchor="middle" fill="#16a34a" font-size="10" font-weight="600">SLA: 7-Day Asset Scan</text>
+  </g>
+
+  <!-- Branch 3: Legal & Audit -->
+  <g transform="translate(520, 260)">
+    <rect width="200" height="75" rx="6" fill="#ffffff" stroke="#980000" stroke-width="1.5"/>
+    <text x="100" y="25" text-anchor="middle" fill="#980000" font-size="12" font-weight="700">Legal Counsel &amp; Audit</text>
+    <text x="100" y="43" text-anchor="middle" fill="#595959" font-size="10">DPB Inquiry &amp; Evidence</text>
+    <text x="100" y="60" text-anchor="middle" fill="#16a34a" font-size="10" font-weight="600">SLA: Continuous Audit</text>
+  </g>
+</svg>

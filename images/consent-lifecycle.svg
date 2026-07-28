@@ -1,0 +1,57 @@
+<svg viewBox="0 0 700 560" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <marker id="arrowCL" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#990000"/>
+    </marker>
+  </defs>
+
+  <circle cx="350" cy="280" r="190" fill="none" stroke="#e7e5e4" stroke-width="3" stroke-dasharray="2 8"/>
+
+  <!-- center label -->
+  <circle cx="350" cy="280" r="86" fill="#fdf1f1"/>
+  <text x="350" y="272" text-anchor="middle" fill="#990000" font-size="15" font-weight="800">CONSENT</text>
+  <text x="350" y="292" text-anchor="middle" fill="#990000" font-size="15" font-weight="800">LIFECYCLE</text>
+
+  <!-- 5 nodes around circle at angles: top, upper-right, lower-right, lower-left, upper-left -->
+  <!-- Collection: top -->
+  <g>
+    <circle cx="350" cy="90" r="40" fill="#990000"/>
+    <text x="350" y="95" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Collect</text>
+    <text x="350" y="45" text-anchor="middle" fill="#1b1b1d" font-size="12">Purpose-specific</text>
+  </g>
+
+  <!-- Validation: upper right -->
+  <g>
+    <circle cx="521" cy="185" r="40" fill="#990000"/>
+    <text x="521" y="190" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Validate</text>
+    <text x="560" y="150" text-anchor="middle" fill="#1b1b1d" font-size="12">Timestamp check</text>
+  </g>
+
+  <!-- Enforcement: lower right -->
+  <g>
+    <circle cx="460" cy="437" r="40" fill="#990000"/>
+    <text x="460" y="442" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Enforce</text>
+    <text x="480" y="495" text-anchor="middle" fill="#1b1b1d" font-size="12">Access control</text>
+  </g>
+
+  <!-- Withdrawal: lower left -->
+  <g>
+    <circle cx="240" cy="437" r="40" fill="#990000"/>
+    <text x="240" y="442" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Withdraw</text>
+    <text x="220" y="495" text-anchor="middle" fill="#1b1b1d" font-size="12">User-initiated</text>
+  </g>
+
+  <!-- Revocation: upper left -->
+  <g>
+    <circle cx="179" cy="185" r="40" fill="#990000"/>
+    <text x="179" y="190" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Revoke</text>
+    <text x="140" y="150" text-anchor="middle" fill="#1b1b1d" font-size="12">Stops processing</text>
+  </g>
+
+  <!-- circular arrows connecting nodes -->
+  <path d="M 385 100 A 190 190 0 0 1 500 155" fill="none" stroke="#990000" stroke-width="2" marker-end="url(#arrowCL)"/>
+  <path d="M 512 222 A 190 190 0 0 1 478 400" fill="none" stroke="#990000" stroke-width="2" marker-end="url(#arrowCL)"/>
+  <path d="M 424 447 A 190 190 0 0 1 276 447" fill="none" stroke="#990000" stroke-width="2" marker-end="url(#arrowCL)"/>
+  <path d="M 222 400 A 190 190 0 0 1 188 222" fill="none" stroke="#990000" stroke-width="2" marker-end="url(#arrowCL)"/>
+  <path d="M 200 155 A 190 190 0 0 1 315 100" fill="none" stroke="#990000" stroke-width="2" marker-end="url(#arrowCL)"/>
+</svg>

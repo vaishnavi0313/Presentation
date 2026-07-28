@@ -1,0 +1,68 @@
+<svg viewBox="0 0 1160 260" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <marker id="arrowPL" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#990000"/>
+    </marker>
+  </defs>
+
+  <!-- connecting line -->
+  <line x1="90" y1="130" x2="1070" y2="130" stroke="#e7e5e4" stroke-width="3"/>
+
+  <!-- stages -->
+  <!-- 1 Collect -->
+  <g>
+    <circle cx="90" cy="130" r="34" fill="#990000"/>
+    <text x="90" y="137" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">01</text>
+    <text x="90" y="188" text-anchor="middle" fill="#1b1b1d" font-size="15" font-weight="700">Collect</text>
+    <text x="90" y="208" text-anchor="middle" fill="#8a8a8e" font-size="11">Lawful, notified</text>
+  </g>
+
+  <!-- 2 Process -->
+  <g>
+    <circle cx="270" cy="130" r="34" fill="#990000"/>
+    <text x="270" y="137" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">02</text>
+    <text x="270" y="188" text-anchor="middle" fill="#1b1b1d" font-size="15" font-weight="700">Process</text>
+    <text x="270" y="208" text-anchor="middle" fill="#8a8a8e" font-size="11">Purpose-bound</text>
+  </g>
+
+  <!-- 3 Store -->
+  <g>
+    <circle cx="450" cy="130" r="34" fill="#990000"/>
+    <text x="450" y="137" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">03</text>
+    <text x="450" y="188" text-anchor="middle" fill="#1b1b1d" font-size="15" font-weight="700">Store</text>
+    <text x="450" y="208" text-anchor="middle" fill="#8a8a8e" font-size="11">Minimised, secured</text>
+  </g>
+
+  <!-- 4 Share -->
+  <g>
+    <circle cx="630" cy="130" r="34" fill="#990000"/>
+    <text x="630" y="137" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">04</text>
+    <text x="630" y="188" text-anchor="middle" fill="#1b1b1d" font-size="15" font-weight="700">Share</text>
+    <text x="630" y="208" text-anchor="middle" fill="#8a8a8e" font-size="11">Consent-checked</text>
+  </g>
+
+  <!-- 5 Retain -->
+  <g>
+    <circle cx="810" cy="130" r="34" fill="#990000"/>
+    <text x="810" y="137" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">05</text>
+    <text x="810" y="188" text-anchor="middle" fill="#1b1b1d" font-size="15" font-weight="700">Retain</text>
+    <text x="810" y="208" text-anchor="middle" fill="#8a8a8e" font-size="11">Regulator-mapped</text>
+  </g>
+
+  <!-- 6 Delete -->
+  <g>
+    <circle cx="990" cy="130" r="34" fill="#990000"/>
+    <text x="990" y="137" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">06</text>
+    <text x="990" y="188" text-anchor="middle" fill="#1b1b1d" font-size="15" font-weight="700">Delete</text>
+    <text x="990" y="208" text-anchor="middle" fill="#8a8a8e" font-size="11">Verifiable erasure</text>
+  </g>
+
+  <!-- arrowheads between nodes -->
+  <line x1="126" y1="130" x2="234" y2="130" stroke="#990000" stroke-width="2" marker-end="url(#arrowPL)"/>
+  <line x1="306" y1="130" x2="414" y2="130" stroke="#990000" stroke-width="2" marker-end="url(#arrowPL)"/>
+  <line x1="486" y1="130" x2="594" y2="130" stroke="#990000" stroke-width="2" marker-end="url(#arrowPL)"/>
+  <line x1="666" y1="130" x2="774" y2="130" stroke="#990000" stroke-width="2" marker-end="url(#arrowPL)"/>
+  <line x1="846" y1="130" x2="954" y2="130" stroke="#990000" stroke-width="2" marker-end="url(#arrowPL)"/>
+
+  <text x="580" y="40" text-anchor="middle" fill="#1b1b1d" font-size="15" font-weight="700">Privacy controls apply at every stage of the data lifecycle</text>
+</svg>

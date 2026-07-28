@@ -1,0 +1,50 @@
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Arial, sans-serif">
+  <rect width="760" height="360" rx="12" fill="#ffffff" stroke="#d9d9d9" stroke-width="1.5"/>
+  <text x="380" y="36" text-anchor="middle" fill="#980000" font-size="16" font-weight="800" letter-spacing="1">CONTINUOUS PRIVACY OPERATIONS LIFECYCLE</text>
+
+  <!-- Circular 4 Node Layout -->
+  <!-- Center circle -->
+  <circle cx="380" cy="200" r="55" fill="#fdf1f1" stroke="#980000" stroke-width="2"/>
+  <text x="380" y="195" text-anchor="middle" fill="#980000" font-size="13" font-weight="800">CONTINUOUS</text>
+  <text x="380" y="212" text-anchor="middle" fill="#980000" font-size="13" font-weight="800">PRIVACY</text>
+
+  <!-- Node 1: Discover & Map (Top) -->
+  <g transform="translate(305, 70)">
+    <rect width="150" height="50" rx="6" fill="#980000"/>
+    <text x="75" y="22" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">1. Discover &amp; Map</text>
+    <text x="75" y="38" text-anchor="middle" fill="#ffcccc" font-size="10">Automated PII Scans</text>
+  </g>
+
+  <!-- Node 2: Score Readiness (Right) -->
+  <g transform="translate(540, 175)">
+    <rect width="150" height="50" rx="6" fill="#1a1a1a"/>
+    <text x="75" y="22" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">2. Score Readiness</text>
+    <text x="75" y="38" text-anchor="middle" fill="#CCCCCC" font-size="10">Weighted Rule Checks</text>
+  </g>
+
+  <!-- Node 3: SLA Remediation (Bottom) -->
+  <g transform="translate(305, 275)">
+    <rect width="150" height="50" rx="6" fill="#980000"/>
+    <text x="75" y="22" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">3. Remediate Gaps</text>
+    <text x="75" y="38" text-anchor="middle" fill="#ffcccc" font-size="10">Automated SLA Tickets</text>
+  </g>
+
+  <!-- Node 4: Audit & Verify (Left) -->
+  <g transform="translate(70, 175)">
+    <rect width="150" height="50" rx="6" fill="#1a1a1a"/>
+    <text x="75" y="22" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">4. Audit &amp; Verify</text>
+    <text x="75" y="38" text-anchor="middle" fill="#CCCCCC" font-size="10">Evidence Packages</text>
+  </g>
+
+  <!-- Arrows connecting nodes in a clockwise loop -->
+  <path d="M 455 95 C 530 95, 615 120, 615 175" fill="none" stroke="#980000" stroke-width="2" marker-end="url(#arrowOps)"/>
+  <path d="M 615 225 C 615 280, 530 300, 455 300" fill="none" stroke="#980000" stroke-width="2" marker-end="url(#arrowOps)"/>
+  <path d="M 305 300 C 230 300, 145 280, 145 225" fill="none" stroke="#980000" stroke-width="2" marker-end="url(#arrowOps)"/>
+  <path d="M 145 175 C 145 120, 230 95, 305 95" fill="none" stroke="#980000" stroke-width="2" marker-end="url(#arrowOps)"/>
+
+  <defs>
+    <marker id="arrowOps" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#980000"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,78 @@
+<svg viewBox="0 0 760 380" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Arial, sans-serif">
+  <rect width="760" height="380" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+  
+  <text x="380" y="36" text-anchor="middle" fill="#980000" font-size="16" font-weight="800" letter-spacing="1">END-TO-END REVOCATION CASCADE WORKFLOW</text>
+
+  <!-- Step 1: User Request -->
+  <g transform="translate(30, 80)">
+    <rect width="140" height="110" rx="8" fill="#ffffff" stroke="#980000" stroke-width="2"/>
+    <circle cx="70" cy="35" r="18" fill="#fff0f0"/>
+    <text x="70" y="40" text-anchor="middle" fill="#980000" font-size="16" font-weight="800">1</text>
+    <text x="70" y="70" text-anchor="middle" fill="#1a1a1a" font-size="13" font-weight="700">User Opt-Out</text>
+    <text x="70" y="90" text-anchor="middle" fill="#595959" font-size="11">Portal / API Request</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <path d="M 170 135 L 205 135" fill="none" stroke="#980000" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- Step 2: Consent Engine -->
+  <g transform="translate(210, 80)">
+    <rect width="150" height="110" rx="8" fill="#980000"/>
+    <circle cx="75" cy="35" r="18" fill="#ffffff" opacity="0.2"/>
+    <text x="75" y="40" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="800">2</text>
+    <text x="75" y="70" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">Consent Engine</text>
+    <text x="75" y="90" text-anchor="middle" fill="#ffcccc" font-size="11">Timestamp &amp; Lock</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <path d="M 360 135 L 395 135" fill="none" stroke="#980000" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- Step 3: Event Broker -->
+  <g transform="translate(400, 80)">
+    <rect width="150" height="110" rx="8" fill="#ffffff" stroke="#980000" stroke-width="2"/>
+    <circle cx="75" cy="35" r="18" fill="#fff0f0"/>
+    <text x="75" y="40" text-anchor="middle" fill="#980000" font-size="16" font-weight="800">3</text>
+    <text x="75" y="70" text-anchor="middle" fill="#1a1a1a" font-size="13" font-weight="700">Event Broker</text>
+    <text x="75" y="90" text-anchor="middle" fill="#595959" font-size="11">Kafka Broadcast</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <path d="M 550 135 L 585 135" fill="none" stroke="#980000" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- Step 4: Downstream Services -->
+  <g transform="translate(590, 80)">
+    <rect width="140" height="110" rx="8" fill="#1a1a1a"/>
+    <circle cx="70" cy="35" r="18" fill="#ffffff" opacity="0.2"/>
+    <text x="70" y="40" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="800">4</text>
+    <text x="70" y="70" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">Cascade Stop</text>
+    <text x="70" y="90" text-anchor="middle" fill="#CCCCCC" font-size="11">Purge &amp; Invalidate</text>
+  </g>
+
+  <!-- Downstream detail boxes -->
+  <g transform="translate(80, 230)">
+    <rect width="180" height="100" rx="6" fill="#ffffff" stroke="#CCCCCC"/>
+    <text x="90" y="30" text-anchor="middle" fill="#980000" font-size="13" font-weight="700">Redis Cache</text>
+    <text x="90" y="55" text-anchor="middle" fill="#595959" font-size="11">Keys Purged (&lt;500ms)</text>
+    <text x="90" y="75" text-anchor="middle" fill="#16a34a" font-size="10" font-weight="700">STATUS: INVALIDATED</text>
+  </g>
+
+  <g transform="translate(290, 230)">
+    <rect width="180" height="100" rx="6" fill="#ffffff" stroke="#CCCCCC"/>
+    <text x="90" y="30" text-anchor="middle" fill="#980000" font-size="13" font-weight="700">Transactional DB</text>
+    <text x="90" y="55" text-anchor="middle" fill="#595959" font-size="11">Non-exempt PII Masked</text>
+    <text x="90" y="75" text-anchor="middle" fill="#16a34a" font-size="10" font-weight="700">STATUS: ERASED</text>
+  </g>
+
+  <g transform="translate(500, 230)">
+    <rect width="180" height="100" rx="6" fill="#ffffff" stroke="#CCCCCC"/>
+    <text x="90" y="30" text-anchor="middle" fill="#980000" font-size="13" font-weight="700">Cryptographic Log</text>
+    <text x="90" y="55" text-anchor="middle" fill="#595959" font-size="11">Audit Trail Hash Locked</text>
+    <text x="90" y="75" text-anchor="middle" fill="#980000" font-size="10" font-weight="700">STATUS: IMMUTABLE</text>
+  </g>
+
+  <defs>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#980000"/>
+    </marker>
+  </defs>
+</svg>
